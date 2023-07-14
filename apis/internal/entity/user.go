@@ -6,10 +6,10 @@ import (
 )
 
 type User struct {
-	ID       entity.ID `joson:id`
-	Name     string    `joson:name`
-	Email    string    `joson:email`
-	Password string    `joson:password`
+	ID       entity.ID `joson:"id"`
+	Name     string    `joson:"name"`
+	Email    string    `joson:"email"`
+	Password string    `joson:"password"`
 }
 
 func NewUser(name, email, password string) (*User, error) {
